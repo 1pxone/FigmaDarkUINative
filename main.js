@@ -1,6 +1,7 @@
 // Utilities
 const path = require("path");
 const fs = require("fs");
+const { autoUpdater } = require('electron-updater')
 
 // Electron
 const { app, Menu } = require("electron");
@@ -36,9 +37,23 @@ app.on("ready", () => {
     const template = menu.createTemplate(app.name);
     const builtMenu = Menu.buildFromTemplate(template);
     Menu.setApplicationMenu(builtMenu);
+
+    mainWindow.once('ready-to-show', () => {
+        autoUpdater.checkForUpdatesAndNotify();
+    });
 });
 
 // Quit when all windows are closed.
 app.on("window-all-closed", () => {
     app.quit();
+});
+
+autoUpdater.on('update-available', () => {
+    mainWindow.webContents.send('update_available');
+});
+autoUpdater.on('update-downloaded', () => {
+    mainWindow.webContents.send('update_downloaded');
+});
+ipcMain.on('restart_app', () => {
+    autoUpdater.quitAndInstall();
 });
