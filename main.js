@@ -32,7 +32,7 @@ app.on("ready", () => {
     //view.createBrowserView(mainWindow);
 
     // Display Dev Tools
-    mainWindow.openDevTools();
+    //mainWindow.openDevTools();
 
     // Menu (for standard keyboard shortcuts)
     const menu = require("./src/menu");
