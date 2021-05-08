@@ -1,7 +1,9 @@
 // Utilities
 const path = require("path");
 const fs = require("fs");
-const { autoUpdater } = require('electron-updater')
+const { ipcRenderer } = require('electron');
+const { autoUpdater } = require('electron-updater');
+const { BrowserWindow, ipcMain } = require('electron');
 
 // Electron
 const { app, Menu } = require("electron");
@@ -30,7 +32,7 @@ app.on("ready", () => {
     //view.createBrowserView(mainWindow);
 
     // Display Dev Tools
-    //mainWindow.openDevTools();
+    mainWindow.openDevTools();
 
     // Menu (for standard keyboard shortcuts)
     const menu = require("./src/menu");
@@ -46,14 +48,4 @@ app.on("ready", () => {
 // Quit when all windows are closed.
 app.on("window-all-closed", () => {
     app.quit();
-});
-
-autoUpdater.on('update-available', () => {
-    mainWindow.webContents.send('update_available');
-});
-autoUpdater.on('update-downloaded', () => {
-    mainWindow.webContents.send('update_downloaded');
-});
-ipcMain.on('restart_app', () => {
-    autoUpdater.quitAndInstall();
 });

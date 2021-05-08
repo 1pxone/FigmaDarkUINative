@@ -40,7 +40,8 @@ body,
 .autocomplete_input--inputWrapper--1naDE,
 .autocomplete_input--input--GaHQC,
 .autocomplete_input--container--3VOsw,
-.desktop_tool_bar--toolBarButton--PIG7r:hover:not(:disabled) {
+.desktop_tool_bar--toolBarButton--PIG7r:hover:not(:disabled),
+.view_mode_toggle--optionButtonUntoggled--260VM:hover {
     background-color: #252525 !important;
 }
 
@@ -76,14 +77,12 @@ body,
 .select_folder_dropdown--dropdownContainer--TIVd0,
 .frame_presets--presetHeader--2P9B7,
 .permissions_modal--selectedTab--baDBc,
-.new_file_dropdown--displayText--1wje8 {
+.new_file_dropdown--displayText--1wje8,
+.community_hub_link--communitySection--10KFH,
+.community_shelf--description--2Zv-M,
+.plugin_tiles--_pluginTileBase--fEbLB {
     color: white !important;
 }
-
-
-/* .svg-container path:not([fill=none]) {
-    fill: #B3B3B3 !important;
-} */
 
 .tool_bar--toolBarIconButton--3Bi-_,
 .sidebar--icon--1Z2rN,
@@ -99,13 +98,13 @@ body,
 .hint_panel--onboardingIcon--1Bki8,
 .inspect_selection_header--headerSelectionIcon--BUgeI,
 .library_section_header--expandCaret--2Osx0,
-.style_icon--image--1eP8e,
 .svg-container path:not([fill=none]) {
     fill: #B3B3B3 !important;
 }
 
 .toolbar_styles--enabledButton--2cWGq,
 .raw_components--_iconButton--353Le,
+.style_icon--image--1eP8e,
 .pages_panel--pageRowSvg--2eQfK,
 #react-page>div>div>div.fullscreen_view--flexContainer--3cbGo>div.fullscreen_view--page--1QuyL>div:nth-child(2)>div>div:nth-child(2)>div>div>span>svg>path,
 #react-page>div>div>div.fullscreen_view--flexContainer--3cbGo>div.fullscreen_view--page--1QuyL>div:nth-child(2)>div>div:nth-child(2)>div>div>div>span>svg>path,
@@ -125,7 +124,9 @@ body,
 .view_mode_toggle--optionButtonUntoggled--260VM:hover,
 .segmented_control--segmentSelected--3vDJm,
 .close_button--closeX--2ttg_:hover,
-.plugin_tiles--installedPluginTileMetadata--3YBIa:hover {
+.plugin_tiles--installedPluginTileMetadata--3YBIa:hover,
+.select--comboBoxSelect--3gK7x:not(:focus-within):hover .select--chevron--AAmeH,
+.export_panel--exportButton--3nhRh {
     background-color: #3B3B3B !important;
 }
 
@@ -133,7 +134,9 @@ body,
     color: #B1B1B1 !important;
 }
 
-.generic_tile--tileBorder--29K0o {
+.generic_tile--tileBorder--29K0o,
+.raw_components--border--3I0I6:not(:disabled):hover,
+.export_picker--thumbContainer--2lDEW {
     border: 1px solid #3B3B3B !important;
 }
 
@@ -186,7 +189,8 @@ body,
 .text--fontPos13--1DoEt,
 .comments_list--pageNameSubheader--1wE3D,
 .file_browser_view--fileBrowserPageViewContainer--1olui,
-.folder_page_view--overviewHeader--2GnSn {
+.folder_page_view--overviewHeader--2GnSn,
+.resource_tiles--count--2vnOs {
     color: #B3B3B3 !important;
 }
 
@@ -207,6 +211,10 @@ body,
 .raw_components--panel--3IcXg,
 .inspect_panels--headerSelectionWithBorder---AMJu {
     border-bottom: none !important;
+}
+
+.export_picker--header--203Gv {
+    border-bottom: #3B3B3B 1px solid !important;
 }
 
 .properties_panel--border--1XEFS,
@@ -260,7 +268,8 @@ body,
 .search_model_toggle--_tabCount--5fRgA,
 .search_scope_toggle--selected--1-BCz,
 .tags_list--tag--1KhOL,
-.template_tiles--dropdownContainer--3D4Jc:hover {
+.template_tiles--dropdownContainer--3D4Jc:hover,
+.new_file_dropdown--toolBarButtonWithBorder--ZOoym {
     border: 1px solid #B3B3B3 !important;
 }
 
@@ -291,4 +300,13 @@ body,
 
 .desktop_tool_bar--toolBarContainer--VnCpw {
     background-color: #2c2c2c !important;
+}
+
+.style_icon--bitmapImage--3DND9 {
+    background-color: white;
+    padding: 2px;
+}
+
+.search--margin12__DEPRECATED--1Pxl5 .search--searchInput__DEPRECATED--3LJnm {
+    background: url("data:image/svg+xml;utf8,<svg width='11' height='11' viewBox='0 0 11 11' fill='none' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' clip-rule='evenodd' d='M6.45285 7.15991C5.77551 7.68652 4.92438 8 4 8C1.79086 8 0 6.20923 0 4C0 1.79077 1.79086 0 4 0C6.20914 0 8 1.79077 8 4C8 4.92432 7.68643 5.77563 7.15991 6.45288L10.3535 9.64648L9.64645 10.3535L6.45285 7.15991ZM7 4C7 5.65674 5.65686 7 4 7C2.34314 7 1 5.65674 1 4C1 2.34326 2.34314 1 4 1C5.65686 1 7 2.34326 7 4Z' fill='white'/></svg>") no-repeat center left 16px !important;
 }

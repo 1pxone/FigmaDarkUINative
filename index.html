@@ -4,44 +4,12 @@
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/content.css">
     <script defer src="assets/js/renderer.js"></script>
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline';" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' http://* 'unsafe-inline'; script-src 'self' http://* 'unsafe-inline' 'unsafe-eval';" />
 </head>
 
 <body>
     <webview id="webview" autosize="on" src="https://www.figma.com/files/recent" data-home="https://www.figma.com/files/recent" nodeintegration></webview>
-    <div id="notification" class="hidden">
-        <p id="message"></p>
-        <button id="close-button" onClick="closeNotification()">
-          Close
-        </button>
-        <button id="restart-button" onClick="restartApp()" class="hidden">
-          Restart
-        </button>
-    </div>
 </body>
-<script>
-    const notification = document.getElementById('notification');
-    const message = document.getElementById('message');
-    const restartButton = document.getElementById('restart-button');
-    ipcRenderer.on('update_available', () => {
-        ipcRenderer.removeAllListeners('update_available');
-        message.innerText = 'A new update is available. Downloading now...';
-        notification.classList.remove('hidden');
-    });
-    ipcRenderer.on('update_downloaded', () => {
-        ipcRenderer.removeAllListeners('update_downloaded');
-        message.innerText = 'Update Downloaded. It will be installed on restart. Restart now?';
-        restartButton.classList.remove('hidden');
-        notification.classList.remove('hidden');
-    });
 
-    function closeNotification() {
-        notification.classList.add('hidden');
-    }
-
-    function restartApp() {
-        ipcRenderer.send('restart_app');
-    }
-</script>
 
 </html>
