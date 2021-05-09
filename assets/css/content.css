@@ -41,7 +41,8 @@ body,
 .autocomplete_input--input--GaHQC,
 .autocomplete_input--container--3VOsw,
 .desktop_tool_bar--toolBarButton--PIG7r:hover:not(:disabled),
-.view_mode_toggle--optionButtonUntoggled--260VM:hover {
+.view_mode_toggle--optionButtonUntoggled--260VM:hover,
+.component_tiles--stickySectionHeader--3i5QD {
     background-color: #252525 !important;
 }
 
@@ -80,7 +81,14 @@ body,
 .new_file_dropdown--displayText--1wje8,
 .community_hub_link--communitySection--10KFH,
 .community_shelf--description--2Zv-M,
-.plugin_tiles--_pluginTileBase--fEbLB {
+.plugin_tiles--_pluginTileBase--fEbLB,
+.file_row--_fileRowHover--1r76k:hover,
+.search--margin24__DEPRECATED--1LY0a .search--searchInput__DEPRECATED--3LJnm,
+.tab--selected--2mpPj:hover,
+.tab--selected--2mpPj,
+.publishing_modal--sectionHeader--38Ghy,
+.modal--title--1kOv4,
+.publishing_modal--descriptionInput--qMiuY {
     color: white !important;
 }
 
@@ -126,7 +134,11 @@ body,
 .close_button--closeX--2ttg_:hover,
 .plugin_tiles--installedPluginTileMetadata--3YBIa:hover,
 .select--comboBoxSelect--3gK7x:not(:focus-within):hover .select--chevron--AAmeH,
-.export_panel--exportButton--3nhRh {
+.export_panel--exportButton--3nhRh,
+.file_row--_fileRowHover--1r76k:hover,
+.publishing_modal--descriptionInput--qMiuY,
+.publishing_modal--sectionHeader--38Ghy,
+.basic_form--btn--3A-Ju {
     background-color: #3B3B3B !important;
 }
 
@@ -190,7 +202,8 @@ body,
 .comments_list--pageNameSubheader--1wE3D,
 .file_browser_view--fileBrowserPageViewContainer--1olui,
 .folder_page_view--overviewHeader--2GnSn,
-.resource_tiles--count--2vnOs {
+.resource_tiles--count--2vnOs,
+.component_tiles--sectionHeader--10N5o {
     color: #B3B3B3 !important;
 }
 
@@ -213,8 +226,18 @@ body,
     border-bottom: none !important;
 }
 
-.export_picker--header--203Gv {
+.export_picker--header--203Gv,
+.search--margin24__DEPRECATED--1LY0a .search--searchInput__DEPRECATED--3LJnm,
+.modal--searchContainer--itrA5,
+.library_preferences_modal--teamSection--376lY,
+.publishing_modal--list--7mlut,
+.subscription_file_view_header--componentOrFileViewHeader--kZqLP {
     border-bottom: #3B3B3B 1px solid !important;
+}
+
+.library_preferences_modal--teamSectionHeader--38VtB,
+.updates--updateFooter--1JjnE {
+    border-top: #3B3B3B 1px solid !important;
 }
 
 .properties_panel--border--1XEFS,
@@ -252,7 +275,8 @@ body,
 
 .constraint_size_selector--outerBox--Po1h3,
 .alignment_view--mainContainer--2o974,
-.constraint_size_selector--innerBox--1w_sf {
+.constraint_size_selector--innerBox--1w_sf,
+.toggle--_toggleState--2oyRv {
     border: 1px solid #515151 !important;
 }
 
@@ -309,4 +333,23 @@ body,
 
 .search--margin12__DEPRECATED--1Pxl5 .search--searchInput__DEPRECATED--3LJnm {
     background: url("data:image/svg+xml;utf8,<svg width='11' height='11' viewBox='0 0 11 11' fill='none' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' clip-rule='evenodd' d='M6.45285 7.15991C5.77551 7.68652 4.92438 8 4 8C1.79086 8 0 6.20923 0 4C0 1.79077 1.79086 0 4 0C6.20914 0 8 1.79077 8 4C8 4.92432 7.68643 5.77563 7.15991 6.45288L10.3535 9.64648L9.64645 10.3535L6.45285 7.15991ZM7 4C7 5.65674 5.65686 7 4 7C2.34314 7 1 5.65674 1 4C1 2.34326 2.34314 1 4 1C5.65686 1 7 2.34326 7 4Z' fill='white'/></svg>") no-repeat center left 16px !important;
+}
+
+.search--margin24__DEPRECATED--1LY0a .search--searchInput__DEPRECATED--3LJnm {
+    background: url("data:image/svg+xml;utf8,<svg width='11' height='11' viewBox='0 0 11 11' fill='none' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' clip-rule='evenodd' d='M6.45285 7.15991C5.77551 7.68652 4.92438 8 4 8C1.79086 8 0 6.20923 0 4C0 1.79077 1.79086 0 4 0C6.20914 0 8 1.79077 8 4C8 4.92432 7.68643 5.77563 7.15991 6.45288L10.3535 9.64648L9.64645 10.3535L6.45285 7.15991ZM7 4C7 5.65674 5.65686 7 4 7C2.34314 7 1 5.65674 1 4C1 2.34326 2.34314 1 4 1C5.65686 1 7 2.34326 7 4Z' fill='white'/></svg>") no-repeat center left 23px !important;
+}
+
+
+/* FigJam */
+
+.pointing_dropdown--content--2os_K {
+    background-color: #252525 !important;
+}
+
+.dropdown--_optionBase--3koiI {
+    color: white !important;
+}
+
+.multilevel_dropdown--rightColumnShortcut--1_lu1 {
+    color: #B3B3B3 !important;
 }
